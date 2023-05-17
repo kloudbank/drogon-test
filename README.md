@@ -58,14 +58,14 @@ docker run --rm --volume="$PWD:/drogon-project" -w="/drogon-project" drogonframe
 
 2. drogon-test containerize
 
-Ubuntu 20.04 base image 기반 실행
-- [Dockerfile](./Dockerfile)
+- Ubuntu 20.04 base image 기반 실행
+  - [Dockerfile](./Dockerfile)
 
 ```sh
 docker build -t <image_name> .
 ```
 
-3. drogon-test image run
+1. drogon-test image run
 
 ```sh
 docker run --name drogon-test -it -p 8080:80 kloudbank/drogon-test:0.0.1 sh -c "/app/drogon-test"
